@@ -1,16 +1,15 @@
-# Task 02a - Count Vowels
-# Write a function called count_vowels(text)
-# that returns the number of vowels in the string.
-# Count both uppercase and lowercase vowels.
-#
-# Vowels are: a, e, i, o, u
-#
-# Example:
-# count_vowels("Education") -> 5
-
 def count_vowels(text):
-    # Write your code here
-    pass
+    # Initialize a counter
+    count = 0
+    # Define a string or set of vowels
+    vowels = "aeiou"
+    
+    for char in text:
+        # Check if the lowercase version of the character is a vowel
+        if char.lower() in vowels:
+            count += 1
+            
+    return count
 
 
 def main():
