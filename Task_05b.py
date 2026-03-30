@@ -8,7 +8,14 @@
 # returns ["pen", "book", "ruler"]
 
 def unique_items(items):
-    # Write your code here
+    seen = []
+    
+    for item in items:
+        # Only add to our new list if we haven't seen it before
+        if item not in seen:
+            seen.append(item)
+            
+    return seen
     pass
 
 
