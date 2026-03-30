@@ -1,20 +1,15 @@
-# Task 02b - Extract Even Numbers
-# Write a function called extract_even_numbers(numbers)
-# that takes a list of integers and returns a new list
-# containing only the even numbers.
-#
-# Example:
-# extract_even_numbers([1, 2, 3, 4, 5, 6]) -> [2, 4, 6]
-
 def extract_even_numbers(numbers):
-    # Write your code here
-    pass
+    # We iterate through 'numbers' and keep 'n' only if n % 2 equals 0
+    return [n for n in numbers if n % 2 == 0]
 
 
 def main():
     user_input = input("Enter numbers separated by commas: ")
+    # This splits the string and converts each piece into an integer
     numbers = [int(x.strip()) for x in user_input.split(",") if x.strip() != ""]
-    print(extract_even_numbers(numbers))
+    
+    result = extract_even_numbers(numbers)
+    print(f"Even numbers: {result}")
 
 
 if __name__ == "__main__":
