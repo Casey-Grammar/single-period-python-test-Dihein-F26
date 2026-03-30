@@ -17,9 +17,23 @@
 # returns ["Mathematics", "Science", "English"]
 
 def expand_subject_codes(codes):
-    # Write your code here
-    pass
-
+    # Mapping table using a dictionary
+    subject_map = {
+        "ENG": "English",
+        "MAT": "Mathematics",
+        "SCI": "Science",
+        "HIS": "History",
+        "ART": "Art"
+    }
+    
+    expanded_list = []
+    
+    for code in codes:
+        # Only add the name if the code exists in our map
+        if code in subject_map:
+            expanded_list.append(subject_map[code])
+            
+    return expanded_list
 
 def main():
     user_input = input("Enter subject codes separated by commas: ")
