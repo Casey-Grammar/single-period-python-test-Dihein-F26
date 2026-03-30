@@ -10,7 +10,12 @@
 
 def classify_temperature(temp):
     # Write your code here
-    pass
+    if temp < 15:
+        return "Cold"
+    elif temp >= 25:
+        return "Hot"
+    else:
+        return "Mild"
 
 
 def main():
