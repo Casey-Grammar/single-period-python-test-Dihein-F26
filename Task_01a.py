@@ -6,11 +6,8 @@
 # calculate_total(4.5, 3) -> 13.5
 
 def calculate_total(price, quantity):
-    # Calculate total by multiplying price and quantity
     total = price * quantity
     return total
-
-
 def main():
     price = float(input("Enter price: "))
     quantity = int(input("Enter quantity: "))
