@@ -34,7 +34,7 @@ def expand_subject_codes(codes):
             expanded_list.append(subject_map[code])
             
     return expanded_list
-
+    pass
 def main():
     user_input = input("Enter subject codes separated by commas: ")
     codes = [code.strip().upper() for code in user_input.split(",") if code.strip() != ""]
